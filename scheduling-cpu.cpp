@@ -178,6 +178,7 @@ void priorityProcess() {
 		Process key = p[i];
 		int j = i - 1;
 
+		// while(j >= 0 && (p[j].pr > key.pr || (p[j].pr == key.pr && p[j].at > key.at))) {
 		while(j >= 0 && p[j].pr > key.pr) {
 			p[j+1] = p[j]; 
 			j--;
